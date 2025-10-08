@@ -132,7 +132,7 @@ Japan()
 print()
 romb(5)
 print()
+print('y=3x')
 graph()
 print()
-
 diag()
