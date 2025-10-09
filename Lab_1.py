@@ -25,8 +25,8 @@ def Japan():
 
 #Узор
 
-repeat = 5 #зададим количество повторений узора
-n=5 #сторона ромба, неизменна
+repeat = 5 
+n=5 #сторона ромба, не менять.
 def romb(repeat):
     height = 2 * n - 1
     num = 0 
@@ -126,3 +126,4 @@ print()
 graph()
 print()
 diag()
+
