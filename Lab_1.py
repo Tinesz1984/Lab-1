@@ -33,31 +33,22 @@ def romb(repeat):
     for i in range(height):
         line = ''
         num+=1
-        # Повторяем узор repeats раз
         for rep in range(repeat):
-            # Определяем позицию в текущем ромбе
             if i < n:
-                # Верхняя часть ромба
                 if i == 0:
-                    # Верхняя вершина
                     stroka = f'{WHITE}{"  " * (n-1)}{BLUE}{"  "}{WHITE}{"  " * (n-2)}{END}'
                 elif i == n-1:
-                    # Средняя линия (самая широкая)
                     stroka = f'{BLUE}{"  "}{WHITE}{"  " * (height-2)}'
                 else:
-                    # Промежуточные линии верхней части
                     spaces_before = n - 1 - i
                     spaces_between = 2 * i - 1
                     spaces_after = (n +1 - spaces_between)-spaces_before
                     stroka = f'{WHITE}{"  " * spaces_before}{BLUE}{"  "}{WHITE}{"  " * spaces_between}{BLUE}{"  "}{WHITE}{"  " * spaces_after}{END}'
             else:
-                # Нижняя часть ромба (симметрична верхней)
                 j = height - 1 - i
                 if j == 0:
-                    # Нижняя вершина
                     stroka = f'{WHITE}{"  " * (n-1)}{BLUE}{"  "}{WHITE}{"  " * (n-2)}{END}'
                 else:
-                    # Промежуточные линии нижней части
                     spaces_before = n - 1 - j
                     spaces_between = 2 * j - 1
                     spaces_after = (n +1 - spaces_between)-spaces_before
@@ -77,7 +68,7 @@ def graph():
 
     for i in range(10):
         result[i] = 3 * i
-
+    print('y=3x')
     step = round(abs(result[0] - result[9]) / 9, 2)
     print(f'Step is {step}')
 
@@ -132,7 +123,6 @@ Japan()
 print()
 romb(5)
 print()
-print('y=3x')
 graph()
 print()
 diag()
