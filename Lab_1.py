@@ -63,7 +63,7 @@ def romb(repeat):
 #График
 
 def graph(): 
-    plot_list = [[0 for i in range(11)] for i in range(10)]  # Увеличиваем до 11 столбцов
+    plot_list = [[0 for i in range(11)] for i in range(10)]  
     result = [0 for i in range(10)]
 
     for i in range(10):
@@ -126,4 +126,5 @@ print()
 graph()
 print()
 diag()
+
 
